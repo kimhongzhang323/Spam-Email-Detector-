@@ -39,7 +39,7 @@ def main():
     evaluate_model(model, X_test_vectorized, y_test)  # Evaluate model performance on test data
 
     # Test with a new message
-    test_message = "Congratulations! You've won a $1,000 Walmart gift card!"  # Sample message to test
+    test_message = input("Enter a message to test: ")  # Prompt user to enter a message
     print(predict_spam(model, vectorizer, test_message))  # Check if the sample message is spam or not
 
 if __name__ == "__main__":
